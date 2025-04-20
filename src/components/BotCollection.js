@@ -6,7 +6,6 @@ function BotCollection({ bots, onEnlistBot }) {
   if (!bots) {
     return <p>Loading bots</p>;
   }
-
   return (
     <div className="bot-collection">
       <h2>Available Bots</h2>
