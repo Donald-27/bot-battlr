@@ -26,7 +26,6 @@ function App() {
     const updatedArmy = botArmy.filter((bot) => bot.id !== botId);
     setBotArmy(updatedArmy);
   }
-
   return (
     <div className="App">
       <YourBotArmy botArmy={botArmy} onReleaseBot={releaseBot} />
