@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+Bot Battlr
+Welcome to Bot Battlr, a React app where you can build your ultimate bot army by selecting and managing powerful battle bots.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  Features
+View a collection of bots fetched from a backend.
 
-## Available Scripts
+Enlist bots into your personal army.
 
-In the project directory, you can run:
+Release bots from your army at any time.
 
-### `npm start`
+Clean, modern UI with responsive design.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Folders:
 
-### `npm test`
+public/: contains index.html
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src/: main source code
 
-### `npm run build`
+components/: React components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+BotCard.jsx
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+BotCollection.jsx
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+YourBotArmy.jsx
 
-### `npm run eject`
+styles/: CSS files
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+App.css
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+BotCard.css
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+index.css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+App.jsx: Main app component
 
-## Learn More
+index.jsx: Entry point
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Other files:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+db.json: JSON server data (must be at project root)
 
-### Code Splitting
+README.md: Project documentation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+ Getting Started
+1. Clone the Repository
+bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+git clone
+cd bot-battlr
+2. Install Dependencies
 
-### Making a Progressive Web App
+npm install
+3. Start the Backend (JSON Server)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+json-server --watch db.json --port 8001
+Ensure you have json-server installed globally. If not, run:
 
-### Advanced Configuration
+npm install -g json-server
+4. Start the React App
+In a separate terminal tab:
+ npm start
+ Backend Route
+Once the server is running, you can access the bot data at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+http://localhost:8001/bots
 
-### Deployment
+Technologies
+React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+JavaScript (ES6+)
 
-### `npm run build` fails to minify
+CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+JSON Server
+
+ Acknowledgments
+Moringa School (Phase 2 Project challenge)
+
+Original Bot Data from [Google Drive source]
+
+ Author
+GitHub: Donald-27
+
+Email: kipropdonald27.com
+

@@ -1,38 +1,94 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #61aaea;
+  color: #333;
+}
+
 .App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Bot Army Section */
+.bot-army {
+  margin-bottom: 40px;
+}
+
+.bot-army h2,
+.bot-collection h2 {
   text-align: center;
+  color: #1e293b;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Cards layout */
+.bot-list,
+.bot-collection .bot-collection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.bot-card {
+  width: 400px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+}
+
+.bot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(108, 102, 102, 0.12);
+  cursor: pointer;
+}
+
+.bot-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.bot-card h3 {
+  margin: 12px 0 4px;
+  color: red;
+  font-size: 20px;
+}
+
+.bot-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.bot-card button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #2563eb;
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-card button:hover {
+  background-color: #1d4ed8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Responsive */
+@media (max-width: 600px) {
+  .bot-card {
+    width: 100%;
   }
 }
