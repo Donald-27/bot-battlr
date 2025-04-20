@@ -9,7 +9,6 @@ function BotCollection({ bots, onEnlistBot }) {
   return (
     <div className="bot-collection">
       <h2>Available Bots</h2>
-
       {}
       <div className="bot-list">
         {bots.map((bot) => {
