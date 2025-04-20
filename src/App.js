@@ -4,7 +4,6 @@ import YourBotArmy from "./components/YourBotArmy";
 import "./App.css";
 
 function App() {
-
   const [bots, setBots] = useState([]);
 
   const [botArmy, setBotArmy] = useState([]);
